@@ -1,17 +1,12 @@
-let getComputerChoice = ['Rock', 'Paper', 'Scissors'];
-
-']'
-const random = (answer) => {
-]    let answer = 'rock', 'paper', ;'scissors';
-
-    // Pick answer randomly
-    let str = '';
-    for (let i = 0; i < length; i++) {
-        str += chars.charAt(Math.floor(Math.random() * chars.length));
+function getComputerChoice() {
+    const randomNumber = Math.floor(Math.random() * 3);
+    if (randomNumber === 0) {
+    return 'rock';
+    } 
+    if (randomNumber === 1) {
+    return 'paper';
+    } 
+    if (randomNumber === 2) {
+    return 'scissors'; 
     }
-
-    return str;
-
-};
-
-console.log(random());
+}

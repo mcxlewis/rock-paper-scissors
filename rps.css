@@ -4,3 +4,12 @@
     font-family: "Baskerville", serif;
 }
 
+button {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: lavender;
+    color: #000000;
+    background-color: lavender;
+    font-family: "Baskerville", serif;
+    font-size: 18px;
+}
