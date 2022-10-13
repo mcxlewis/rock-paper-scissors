@@ -11,10 +11,21 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection === 'rock' || computerSelection === 'paper') {
+    if (playerSelection === 'rock' && computerSelection === 'paper') {
         return 'you lose! paper beats rock!';
-    }
-} 
-const playerSelection = 'rock';
+    } if (playerSelection === 'scissors' && computerSelection === 'rock') {
+        return 'you lose! rock beats scissors!';
+    } if (playerSelection === 'paper' && computerSelection === 'rock') {
+        return 'you lose! rock beats paper!';
+    } else if (playerSelection === 'rock' && computerSelection === 'scissors') {
+        return 'you win! rock beats scissors!';
+    } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
+        return 'you win! scissors beat paper!';
+    } else if (playerSelection === 'paper' && computerSelection === 'scissors') {
+        return 'you win! paper beats scissors!';
+    } else { (playerSelection === computerSelection);
+        return 'draw! try again!' 
+    } }
+let playerSelection = prompt ('rock, paper, or scissors?')
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
